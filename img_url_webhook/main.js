@@ -37,8 +37,8 @@ function copy_paste() {
 }
 
 function doPost(e){
-  var data = JSON.parse(e.postData.getDataAsString());
-  Logger.log(data);
+  var text = 'This script ran successfully.';
   get_data();
   copy_paste();
+  return text;
 }
